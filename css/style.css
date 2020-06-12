@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    margin: 17.5px 100px;
+    background: linear-gradient(to top, #6D107E, #F03358);
+    background-size: cover;
+}
+
+.field {
+    width: 600px;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    background-color: black;
+    position: relative;
+    border-radius: 10px;
+}
+
+.excel {
+    width: 25px;
+    height: 25px;
+}
+
+.snake_body {
+    width: 25px;
+    height: 25px;
+    background: url(../img/snake_body.svg);
+    background-size: cover;
+    transform: rotate(90deg);
+}
+
+.snake_head {
+    width: 25px;
+    height: 25px;
+    background: url(../img/snake_head.svg);
+    background-size: cover;
+}
+
+.apple {
+    background: url(../img/apple.svg);
+    background-size: cover;
+}
+
+.out {
+    display: block;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 140px;
+    left: -300px;
+    background: linear-gradient(to top, rgb(151, 21, 125), #1f1f58);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #0B2349;
+    font-size: 120px;
+    text-align: center;
+    line-height: 300px;
+}
+
+.btn {
+    width: 100px;
+    height: 70px;
+    background: linear-gradient(to top, rgb(151, 21, 125), #1f1f58);
+    position: absolute;
+    top: 310px;
+    right: -230px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.6);
+    transition: all .5s;
+    font-size: 20px;
+}
+
+.btn:hover {
+    box-shadow: none;
+}
+
+.wrap {
+    position: absolute;
+    top: 195px;
+    right: -100px;
+    width: 70px;
+    display: flex;
+}
+
+.speed {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(to top, rgb(252, 0, 122), rgb(255, 0, 60));
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    text-align: center;
+    padding: 8px;
+    margin: 0 5px;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.6);
+    transition: all .5s;
+
+}
+
+.speed:hover {
+    box-shadow: none;
+    transform: translateY(-10%);
+}
+
+.active {
+    background: none;
+    background: url(../img/fire.svg);
+    background-size: cover;
+}
+
+.scoreTitle {
+    position: absolute;
+    top: 125px;
+    left: -220px;
+    font-size: 50px;
+    color: #1f1f58;
+}
+
+.speedTitle {
+    position: absolute;
+    top: -76px;
+    right: -155px;
+    font-size: 50px;
+    color: #1f1f58;
+}
